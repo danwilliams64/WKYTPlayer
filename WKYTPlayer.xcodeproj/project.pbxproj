@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		37126EB1202DA85100CBB2E6 /* WKYTPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 37126EAF202DA85100CBB2E6 /* WKYTPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37126EBA202DA86400CBB2E6 /* WKYTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37126EB7202DA86400CBB2E6 /* WKYTPlayerView.m */; };
-		37126EBB202DA86400CBB2E6 /* WKYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37126EB8202DA86400CBB2E6 /* WKYTPlayerView.h */; };
+		37126EBB202DA86400CBB2E6 /* WKYTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 37126EB8202DA86400CBB2E6 /* WKYTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37126EBC202DA86400CBB2E6 /* WKYTPlayerView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 37126EB9202DA86400CBB2E6 /* WKYTPlayerView.bundle */; };
 		37126ED3202DA91600CBB2E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37126ED2202DA91600CBB2E6 /* main.m */; };
 		37126EE0202DA94B00CBB2E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37126ED7202DA94A00CBB2E6 /* AppDelegate.m */; };
