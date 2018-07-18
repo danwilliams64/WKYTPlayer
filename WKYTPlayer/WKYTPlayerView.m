@@ -997,8 +997,11 @@ NSString static *const kWKYTPlayerSyndicationRegexPattern = @"^https://tpc.googl
  * @param jsToExecute The JavaScript code in string format that we want to execute.
  */
 - (void)stringFromEvaluatingJavaScript:(NSString *)jsToExecute completionHandler:(void (^ __nullable)(NSString * __nullable response, NSError * __nullable error))completionHandler{
-    [self.webView evaluateJavaScript:jsToExecute completionHandler:^(NSString * _Nullable response, NSError * _Nullable error) {
+    [self.webView evaluateJavaScript:jsToExecute completionHandler:^(id _Nullable response, NSError * _Nullable error) {
         if (completionHandler) {
+            if (![response isKindOfClass:[NSString class]]) {
+                response = nil; // js is somehow returning unexpected type values while we only expect string values.
+            }
             completionHandler(response, error);
         }
     }];
